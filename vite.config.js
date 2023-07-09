@@ -15,7 +15,7 @@ export default defineConfig({
     http: true,
     proxy: {
       '/api/': {
-        target: 'http://localhost:18775/',
+        target: 'https://www.luoyangapi.top/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '') // 不可以省略rewrite
       }
